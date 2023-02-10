@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-family: 'Shrikhand';
+    font-size: 22px;
+
+}
+.navigation{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    height:30px;
+    width:100%;
+}
+
+.topmenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.imagerestaurant{
+    height:150px;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.menurestaurant{
+    position: relative;
+    top:130px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #DCDCDC;
+    padding-top: 30px;
+}
+.titrerestaurant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fa-solid.fa-heart{
+    display: none;
+}
+
+/* tablette*/
+@media (min-width: 768px){
+.topmenufleche{
+    display:none;
+}
+.titrerestaurant{
+    justify-content: center;
+}
+.coeur{
+    padding-left: 50px;
+}
+.imagerestaurant{
+    height:250px;
+}
+.menurestaurant{
+    position: relative;
+    top:230px;
+}
+}
+/* Ddesktop*/
+
+@media (min-width:992px){
+    .topmenufleche{
+        display:none;
+    }
+    .imagerestaurant{
+        height:350px;
+    }
+    .menurestaurant{
+        position: relative;
+        top:320px;
+    }
+    .titrerestaurant{
+        justify-content: center;
+    }
+    .coeur{
+        padding-left: 50px;
+    }
+    }
