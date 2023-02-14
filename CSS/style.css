@@ -55,7 +55,8 @@ p{
 .recherche{
     border: none;
     background-color: #DCDCDC;
-    width: 50%;
+    /*width: 50%;*/
+    outline: none;
 }
 ::placeholder{
     font-family: 'Roboto';
@@ -85,8 +86,8 @@ p{
 .fonctionnement{
     margin-top: 20px;
     margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     gap:10px;
 }
 .etape{
@@ -230,6 +231,7 @@ footer{
     background-color: #696969;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left:15px;
 }
 .textefooter{
     font-family: 'Shrikhand';
