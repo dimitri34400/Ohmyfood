@@ -112,11 +112,22 @@ margin-bottom: 20px;
 }
 
 .commander{
+    background: linear-gradient(351deg, rgba(147,86,220,1) 6%, rgba(255,121,218,1) 100%);
     border-radius: 25px;
-    color:white;
-    background-color: #9356DC;
-    padding:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    width:30%
+}
+.commander button{
+    border:none;
+    background:none;
+    color: white;
 }
 /*footer*/
 
