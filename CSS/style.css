@@ -181,7 +181,11 @@ p{
     position: relative;
     border-radius: 20px;
     margin-bottom: 10px;
-}
+    cursor: pointer;
+    /* &:hover + .coeur{
+        transform:scale: (1.15); */
+    }
+
 .imagerestaurant{
     object-fit: cover;
     width:100%;
@@ -214,19 +218,18 @@ p{
     display: flex;
     flex-direction: column;
 }
-.fa-solid.fa-heart{
-    display: none;
-}
-.fa-solid.fa-heart :hover{ /*A revoir*/
-    display: block;
-    color: rgb(147,86,220, 1);
-}
-.fa-regular.fa-heart :hover{
-    display: none;
-}
+
 .coeur{
-    position:relative
+    position:relative;
 }
+
+/*.fa-solid.fa-heart{
+    display:none;
+}
+.cardrestaurant:hover +.fa-solid.fa-hear{
+    color:red;
+    display: block;
+}*/
 
 
 /*footer*/
