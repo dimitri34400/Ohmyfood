@@ -56,10 +56,24 @@ h1{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.fa-solid.fa-heart{
-    display: none;
+.coeur .fa-solid{
+    opacity:0;
+    position:absolute;
+    transition-duration: 1s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(351deg, rgba(147,86,220,1) 6%, rgba(255,121,218,1) 100%); ;
 }
-
+.coeur:hover .fa-solid{
+    opacity:1;
+}
+.coeur:hover .fa-regular{
+    opacity:0;
+}
+.fa-regular{
+    transition-duration: 1s;
+}
 /*Menu*/ 
 .entree{
     margin-bottom: 40px;
@@ -71,7 +85,7 @@ h1{
     margin-bottom: 40px;
 }
 H2{   
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid #99E2D0;
     width:50px;
     margin-bottom:20px;
 }
@@ -92,6 +106,9 @@ cursor: pointer;
     width:150px;
     flex:1;
     padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .blocmenu p {
     align-items: end;
@@ -99,7 +116,7 @@ cursor: pointer;
     padding-right:15px;
 }
 .check{
-    background-color: green;
+    background-color: #99E2D0;
     display: flex;
     align-items: center;
     width:0px;
@@ -150,7 +167,7 @@ footer{
     margin-top: 130px;
     display: flex;
     flex-direction: column;
-    background-color: #696969;
+    background-color: #474747;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left:15px;
@@ -160,12 +177,14 @@ footer{
     color:white;
     column-gap: 20px;
     display: flex;
+    margin-bottom: 20px;
 }
 .elementfooter{
     display: flex;
     flex-direction: column;
     gap:10px;
     color:white;
+    margin-bottom: 20px;
 }
 .footeretpicto{
     display: flex;
