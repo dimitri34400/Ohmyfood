@@ -110,7 +110,12 @@ cursor: pointer;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.blocmenu p {
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.price{
     align-items: end;
     display: flex;
     padding-right:15px;
