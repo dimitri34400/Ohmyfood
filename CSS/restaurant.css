@@ -20,6 +20,7 @@ h1{
 .navigation{
     display:flex;
     align-items: center;
+    padding-left: 20px;
 }
 .logo{
     height:30px;
@@ -119,6 +120,7 @@ cursor: pointer;
     align-items: end;
     display: flex;
     padding-right:15px;
+    padding-bottom: 10px;
 }
 .check{
     background-color: #99E2D0;

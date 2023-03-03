@@ -153,6 +153,10 @@ p{
     flex-direction: column;*/
     gap:10px;
 }
+
+.fonctionnement H2{
+    padding-left: 20px;
+}
 .etape{
     display: flex;
     flex-direction: column;
@@ -233,6 +237,8 @@ p{
     border-radius: 20px;
     margin-bottom: 10px;
     cursor: pointer;
+    width:95%;
+    margin:auto;
     /* &:hover + .coeur{
         transform:scale: (1.15); */
     }
@@ -314,11 +320,15 @@ footer{
     padding-bottom: 10px;
     padding-left:15px;
 }
+footer a{
+    color:white;
+}
 .textefooter{
     font-family: 'Shrikhand';
     color:white;
     column-gap: 20px;
     display: flex;
+    
 }
 .elementfooter{
     display: flex;
@@ -370,6 +380,9 @@ footer{
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+.fonctionnement H2{
+    padding-left: 30px;
 }
 .blocrestaurant{
     display: flex;
