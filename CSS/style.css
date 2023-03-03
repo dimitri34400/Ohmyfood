@@ -13,6 +13,32 @@ body{
     opacity:1;
     animation: apparition_page 3.5s;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Shrikhand';
+    font-size: 22px;
+    text-align: center;
+    width:50%;
+    margin-left:25%;
+    margin-right: 25%;
+}
+
+p{
+    margin:0;
+}
+
+/* Gestion du spineur */
 .loader {
     position: fixed;
     top:0;
@@ -32,7 +58,6 @@ body{
     animation: spin 3s linear ;
     opacity:0;
   }
-
 
   @keyframes spin {
     0% {
@@ -55,27 +80,9 @@ body{
         opacity:1;
     }
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-h1{
-    font-family: 'Shrikhand';
-    font-size: 22px;
-    text-align: center;
-    width:50%;
-    margin-left:25%;
-    margin-right: 25%;
-}
-p{
-    margin:0;
-}
+
+/* Barre de recherche*/
 .searchbar{
     margin-top: 5px;;
     display: flex;
@@ -90,8 +97,8 @@ p{
     border-top: #f1f3f5;
     border-top: 2px rgb(220,220,220, 0.2);
     border-top-style:inset;
-
 }
+
 .searchbarcomposant{
     display:flex;
     flex-direction: row;
@@ -104,9 +111,9 @@ p{
 .recherche{
     border: none;
     background-color: #DCDCDC;
-    /*width: 50%;*/
     outline: none;
 }
+
 ::placeholder{
     font-family: 'Roboto';
     color: black;
@@ -115,6 +122,9 @@ p{
     text-align: left;
     
 }
+
+/*Element bannière haut*/
+
 .booking{
     display: flex;
     flex-direction: column;
@@ -125,6 +135,7 @@ p{
     text-align: center;
     background-color: #F5F5F5;
 }
+
 .explorer{
     background: linear-gradient(351deg, rgba(147,86,220,1) 6%, rgba(255,121,218,1) 100%);
     border-radius: 25px;
@@ -137,32 +148,37 @@ p{
     display: flex;
     justify-content: center;
 }
+
 .explorer button{
     border:none;
     background:none;
     color: white;
     cursor:pointer;
 }
+
 .explorer:hover{
     background: linear-gradient(351deg, rgba(147,86,220,0.6306897759103641) 0%, rgba(255,121,218,0.6306897759103641) 100%);
 }
+
+/*Elements de la partie fonctionnement*/
+
 .fonctionnement{
     margin-top: 20px;
     margin-bottom: 60px;
-    /*display: flex;
-    flex-direction: column;*/
     gap:10px;
 }
 
 .fonctionnement H2{
     padding-left: 20px;
 }
+
 .etape{
     display: flex;
     flex-direction: column;
     gap:20px;
     margin-top:20px;
 }
+
 .cardfonctionnement{
     border-radius: 25px;
     background-color: #F5F5F5;
@@ -178,6 +194,7 @@ p{
     margin-right: 5%;
     position:relative;
 }
+
 .number{
     position:absolute;
     left: -5px;
@@ -193,6 +210,7 @@ p{
     opacity:0.7;
     margin-left: 5%;  
 }
+
 .fa-store{
     opacity:0.7;
     margin-left: 5%;  
@@ -206,15 +224,18 @@ p{
 .lienfonctionnement :hover{
     background-color: #decbf4
 }
+
 .lienfonctionnement :hover .fa-solid{
     color:#9356DC;
 }
+
 .textefonctionnement{
     margin-left:5%;
     display: flex;
     justify-content: center;
     width:100%;
 }
+
 
 /*Partie restaurant*/
 
@@ -225,6 +246,11 @@ p{
     flex-direction: column;
     padding-bottom: 30px;
 }
+
+.restaurant H2{
+    padding-left: 20px;
+}
+
 .blocrestaurant{
     margin-top: 30px;
     display: flex;
@@ -239,8 +265,7 @@ p{
     cursor: pointer;
     width:95%;
     margin:auto;
-    /* &:hover + .coeur{
-        transform:scale: (1.15); */
+    box-shadow: 1px 1px 10px #dfdfdf;
     }
 
 .imagerestaurant{
@@ -250,6 +275,7 @@ p{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
 .nouveau{
     position: absolute;
     top: 20px;
@@ -258,6 +284,7 @@ p{
     padding: 5px;
     color: #4a786e	 ;
 }
+
 .textebottom{
     display: flex;
     flex-direction: row;
@@ -271,6 +298,7 @@ p{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 .bottomcardrestaurant{
     display: flex;
     flex-direction: column;
@@ -278,11 +306,8 @@ p{
 
 .coeur{
     position:relative;
-    
 }
-/*.fa-regular.fa-heart{
-    position:absolute;
-}*/ 
+
 .coeur .fa-solid{
     opacity:0;
     position:absolute;
@@ -292,22 +317,18 @@ p{
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(351deg, rgba(147,86,220,1) 6%, rgba(255,121,218,1) 100%); ;
 }
+
 .coeur:hover .fa-solid{
     opacity:1;
 }
+
 .coeur:hover .fa-regular{
     opacity:0;
 }
+
 .fa-regular{
     transition-duration: 1s;
 }
-/*.fa-solid.fa-heart{
-    display:none;
-}
-.cardrestaurant:hover +.fa-solid.fa-hear{
-    color:red;
-    display: block;
-}*/
 
 
 /*footer*/
@@ -320,22 +341,25 @@ footer{
     padding-bottom: 10px;
     padding-left:15px;
 }
+
 footer a{
     color:white;
 }
+
 .textefooter{
     font-family: 'Shrikhand';
     color:white;
     column-gap: 20px;
     display: flex;
-    
 }
+
 .elementfooter{
     display: flex;
     flex-direction: column;
     gap:10px;
     color:white;
 }
+
 .footeretpicto{
     display: flex;
     flex-direction: row;
@@ -344,7 +368,7 @@ footer a{
 }
 
 
-/* tablette*/
+/* Elements tablettes*/
 @media (min-width: 768px){
     H1{
         margin:inherit;
@@ -384,6 +408,10 @@ footer a{
 .fonctionnement H2{
     padding-left: 30px;
 }
+
+.restaurant H2{ 
+        padding-left: 30px;
+}
 .blocrestaurant{
     display: flex;
     flex-direction: row;
@@ -410,7 +438,9 @@ footer{
     gap:40px;
 }
 }
-/* Ddesktop*/
+
+
+/* Elements desktop*/
 
 @media (min-width:992px){
 
