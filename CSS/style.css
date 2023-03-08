@@ -384,7 +384,7 @@ footer a{
         width: inherit;
         margin-left: inherit;
         margin-right: inherit;
-        margin-top: none;       
+        margin-top: inherit;       
 }
     .recherche{
         width:inherit;
@@ -455,10 +455,7 @@ footer{
         background-color: #F5F5F5;
     }
     .searchbar{
-        width: 85%;
-        margin-left: inherit;
-        margin-right: inherit;
-        margin-top: none;       
+        width: 85%;   
 }
 .recherche{
     width:inherit;
